@@ -1,0 +1,30 @@
+{
+  "name": "poc",
+  "version": "1.0.0",
+  "description": "Teste de Fogo",
+  "productName": "Prova de Conceito",
+  "cordovaId": "y",
+  "author": "Anderson",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue-ckeditor2": "^1.25.0",
+    "vue-i18n": "^7.3.3",
+    "vue2-editor": "^2.4.2"
+  },
+  "devDependencies": {
+    "quasar-cli": "^0.15.14"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}
