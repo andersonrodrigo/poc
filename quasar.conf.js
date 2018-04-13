@@ -30,11 +30,19 @@ module.exports = function (ctx) {
       // extractCSS: false,
       // useNotifier: false,
       extendWebpack (cfg) {
-      }
+      },
+      env: ctx.dev
+        ? { // so on dev we'll have
+          API: JSON.stringify('http://localhost:8088')
+        }
+        : { // and on build (production):
+          API: JSON.stringify('https://prod.api.com')
+        }
     },
     devServer: {
       // https: true,
-      // port: 8080,
+      // port: 8088,
+       
       open: true // opens browser window automatically
     },
     // framework: 'all' --- includes everything; for dev only!
@@ -55,7 +63,11 @@ module.exports = function (ctx) {
         'QItemMain',
         'QItemSide',
         'QInput',
-        'QDatetime'
+        'QDatetime',
+        'QCollapsible',
+        'QCardSeparator',
+        'QCardTitle',
+        'QCard'
       ],
       directives: [
         'Ripple'
